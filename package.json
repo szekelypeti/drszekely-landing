@@ -1,0 +1,14 @@
+{
+  "name": "drszekely-landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/db": "^0.18.3",
+    "astro": "^4.0.0"
+  }
+}
