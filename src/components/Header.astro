@@ -1,0 +1,32 @@
+---
+const nav = [
+  { href: "#bemutatkozas", label: "Bemutatkozás" },
+  { href: "#szolgaltatasok", label: "Szolgáltatások" },
+  { href: "#tanfolyamok", label: "Tanfolyamtípusok" },
+  { href: "#beiratkozas", label: "Beiratkozás" },
+  { href: "#tandij", label: "Tandíj" },
+  { href: "#csomagarak", label: "Csomagárak" },
+  { href: "#kapcsolat", label: "Kapcsolat" },
+];
+---
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Ugrás a tetejére">
+        <span class="logo" aria-hidden="true"></span>
+        <span>
+          <b>Dr. Székely Nyelviskola</b>
+          <small>Hibrid nyelvoktatás • Online</small>
+        </span>
+      </a>
+
+      <nav class="navlinks" aria-label="Fő navigáció">
+        {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+      </nav>
+
+      <div class="btnrow" style="margin:0;">
+        <a class="btn primary" href="#kapcsolat">Beiratkozás / információ</a>
+      </div>
+    </div>
+  </div>
+</header>

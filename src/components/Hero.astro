@@ -1,0 +1,56 @@
+---
+const phoneRaw = "+36702864266";
+const phoneDisplay = "+36 70 286 4266";
+const email = "info@drszekelypeter.hu";
+---
+<section class="section" id="bemutatkozas" style="padding-top:44px;">
+  <div class="container" id="top">
+    <div class="stack">
+      <div class="kicker"><span class="kdot" aria-hidden="true"></span>Beszédközpontú online órák + önálló gyakorlás</div>
+
+      <h1>Üdvözöllek!</h1>
+
+      <div class="card">
+        <p style="margin-bottom:10px; color:var(--text); font-weight:650;">
+          A nevem Dr. Székely Péter, a Dr. Székely Nyelviskola alapítója vagyok. Több mint húsz éve foglalkozom nyelvoktatással.
+        </p>
+
+        <p style="margin-top:10px;">
+          2010-ben egy olyan nyelvoktatási rendszert dolgoztam ki, amelynek célja a gyors fejlődés és az igényes, stabil nyelvtudás megszerzése.
+          Ennek érdekében a hangsúly a közérthető magyarázatokon, a hatékony fejlesztő gyakorlatokon és a beszédközpontú tanórákon van.
+        </p>
+
+        <p style="margin-top:10px;">
+          A módszer az évek során bevált: számos sikeres nyelvtanuló és pozitív visszajelzés igazolja az eredményességét.
+          A rendszer folyamatosan fejlődött, és egy saját fejlesztésű gyakorlószoftverrel kiegészülve mára a Dr. Székely Nyelviskola hibrid nyelvoktatási megoldást kínál angol, német és francia nyelven.
+        </p>
+
+        <p style="margin-top:10px;">
+          A hibrid módszer lényege, hogy a tanár által vezetett tanórákat az önálló, számítógépes gyakorlás egészíti ki.
+          A két elem együtt alkot hatékony tanulási rendszert. A gyakorlóprogram a nap 24 órájában elérhető, és lehetőséget biztosít arra,
+          hogy a tananyagot önállóan, alaposan begyakorold. A tanórákon pedig elsősorban a beszédfejlesztés és az aktív nyelvhasználat áll a középpontban.
+        </p>
+
+        <div class="btnrow">
+          <a class="btn primary" href="#kapcsolat">Kapcsolatfelvétel</a>
+          <a class="btn" href={`tel:${phoneRaw}`}>Telefon: {phoneDisplay}</a>
+          <a class="btn" href={`mailto:${email}`}>E-mail: {email}</a>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card soft">
+          <span class="badge">Online nyelvoktatás</span>
+          <h3 style="margin-top:10px;">Internetes, illetve telefonos platformon</h3>
+          <p style="margin-top:6px;">Rugalmas csatlakozás, otthonról is kényelmesen.</p>
+        </div>
+
+        <div class="card soft">
+          <span class="badge">Kis létszám</span>
+          <h3 style="margin-top:10px;">Egyfős, maximum kétfős órák</h3>
+          <p style="margin-top:6px;">Több beszédidő és célzottabb visszajelzés.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

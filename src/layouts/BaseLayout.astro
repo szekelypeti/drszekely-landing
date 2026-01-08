@@ -1,0 +1,25 @@
+---
+const {
+  title = "Dr. Székely Nyelviskola",
+  description = "Hibrid nyelvoktatás angol, német és francia nyelven online, beszédközpontú tanórákkal és saját gyakorlószoftverrel.",
+} = Astro.props;
+---
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

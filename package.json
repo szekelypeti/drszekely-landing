@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "@astrojs/db": "^0.18.3",
-    "astro": "^4.0.0"
+    "astro": "^5.16.7"
   }
 }

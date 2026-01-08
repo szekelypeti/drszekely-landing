@@ -1,0 +1,54 @@
+---
+import Section from "./Section.astro";
+
+const phoneRaw = "+36702864266";
+const phoneDisplay = "+36 70 286 4266";
+const email = "info@drszekelypeter.hu";
+
+const subject = encodeURIComponent("Beiratkozás és további információk — Dr. Székely Nyelviskola");
+const bodyTemplate =
+`Üdvözlöm!
+
+Érdeklődöm a tanfolyam iránt.
+
+Nyelv (angol/német/francia):
+Szint:
+Cél (társalgás/vizsga/üzleti/tudományos/korrepetálás):
+Elérhető idősávok:
+Megjegyzés:
+
+Köszönettel,
+`;
+const body = encodeURIComponent(bodyTemplate);
+---
+<Section
+  id="kapcsolat"
+  title="Beiratkozás és további információk"
+  desc="Elérhetőségek és gyors e-mail sablon a kapcsolatfelvételhez."
+>
+  <div class="stack">
+    <div class="card">
+      <span class="badge">Elérhetőségek</span>
+      <hr class="sep" />
+
+      <div class="grid-2">
+        <div class="card soft">
+          <p style="color:var(--text); font-weight:750; margin-bottom:6px;">Telefon</p>
+          <p><a href={`tel:${phoneRaw}`} style="color:var(--text); font-weight:800;">{phoneDisplay}</a></p>
+          <p style="margin-top:8px;">Beiratkozás előtt telefonos szint- és igényfelmérés.</p>
+        </div>
+
+        <div class="card soft">
+          <p style="color:var(--text); font-weight:750; margin-bottom:6px;">E-mail</p>
+          <p><a href={`mailto:${email}`} style="color:var(--text); font-weight:800;">{email}</a></p>
+          <p style="margin-top:8px;">Írj röviden a célodról és az időbeosztásodról.</p>
+        </div>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn primary" href={`mailto:${email}?subject=${subject}&body=${body}`}>E-mail írása (előre kitöltve)</a>
+        <a class="btn" href={`tel:${phoneRaw}`}>Telefonálok</a>
+      </div>
+    </div>
+  </div>
+</Section>

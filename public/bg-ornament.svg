@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <radialGradient id="g1" cx="30%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#6d28d9" stop-opacity="0.20"></stop>
+      <stop offset="60%" stop-color="#6d28d9" stop-opacity="0.06"></stop>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="g2" cx="70%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0891b2" stop-opacity="0.16"></stop>
+      <stop offset="55%" stop-color="#0891b2" stop-opacity="0.06"></stop>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="g3" cx="55%" cy="80%" r="55%">
+      <stop offset="0%" stop-color="#16a34a" stop-opacity="0.12"></stop>
+      <stop offset="60%" stop-color="#16a34a" stop-opacity="0.05"></stop>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#111827" stop-opacity="0.10"></stop>
+      <stop offset="1" stop-color="#111827" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" fill="none"></rect>
+  <circle cx="430" cy="240" r="360" fill="url(#g1)"></circle>
+  <circle cx="980" cy="260" r="420" fill="url(#g2)"></circle>
+  <circle cx="820" cy="760" r="360" fill="url(#g3)"></circle>
+
+  <path d="M980 140 C1100 200, 1160 310, 1150 420 C1140 550, 1030 620, 910 610 C800 600, 710 510, 720 390 C730 260, 860 170, 980 140 Z" fill="none" stroke="url(#line)" stroke-width="2"></path>
+
+  <path d="M360 140 C480 200, 530 290, 520 400 C510 520, 420 590, 310 580 C210 570, 140 490, 150 380 C160 250, 250 170, 360 140 Z" fill="none" stroke="url(#line)" stroke-width="2"></path>
+
+  <path d="M780 620 C880 660, 930 740, 920 820 C910 910, 820 950, 740 940 C660 930, 600 860, 610 780 C620 700, 700 640, 780 620 Z" fill="none" stroke="url(#line)" stroke-width="2"></path>
+</svg>
